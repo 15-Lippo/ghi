@@ -20,7 +20,7 @@ var Tx = require("ethereumjs-tx").Transaction;
 
 // Connect to Infura's ropsten node
 const web3 = new Web3(
-  new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/b2e13b0a648e4c67b4a36951f5b1ed62")
+  new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/d57f136bd5024f4889c74a1d4f7ce760")
 ); 
 
 // Representation of ETH as an address on Ropsten
@@ -42,9 +42,9 @@ const TOKEN_DECIMALS = 18;
 // Gas price of the transaction
 const GAS_PRICE = "medium";
 // Your Ethereum wallet address
-const USER_ACCOUNT = "0x514FE66A514a5B73F8E78B31173eE913C810425E";
+const USER_ACCOUNT = "0xD0355200111C2B21AAbC1a31552eCCDc5d4E905d";
 // Your private key
-const PRIVATE_KEY = Buffer.from("d95ae2d664459c8f939a18772579c0d2898325d71411ba475d468a78c1860b1b", "hex");
+const PRIVATE_KEY = Buffer.from("0xD0355200111C2B21AAbC1a31552eCCDc5d4E905d", "hex");
 // Your fee sharing address
 // const WALLET_ID = "ENTER_FEE_SHARING_ADDRESS_HERE";
 
