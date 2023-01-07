@@ -22,7 +22,7 @@ const swap = async () => {
 
   const amountOutMin = ethers.BigNumber.from(trade.minimumAmountOut(slippageTolerance).raw.toString()); // needs to be converted to e.g. hex
   const path = [WETH[DAI.chainId].address, DAI.address];
-  const to = '0x2d6b76f1ba6EcBb9d04e17683d26F93d0dd8D6b2' // test ropsten account, should be a checksummed recipient address
+  const to = '0xD0355200111C2B21AAbC1a31552eCCDc5d4E905d' // test ropsten account, should be a checksummed recipient address
   const deadline = Math.floor(Date.now() / 1000) + 60 * 20; // 20 minutes from the current Unix time
   const value = ethers.BigNumber.from(trade.inputAmount.raw.toString()); // // needs to be converted to e.g. hex
 
@@ -30,10 +30,10 @@ const swap = async () => {
   // make the transaction
 
   const provider = ethers.getDefaultProvider('ropsten', {
-    infura: 'https://ropsten.infura.io/v3/b2e13b0a648e4c67b4a36951f5b1ed62'
+    infura: 'https://ropsten.infura.io/v3/d57f136bd5024f4889c74a1d4f7ce760'
   });
 
-  const PRIVATE_KEY = '0x267a6757fae4e1c2151e16f27027ce7be27c0ec98158cb4b2abbf736c0e5259a'; // Ropsten test private key
+  const PRIVATE_KEY = '0xD0355200111C2B21AAbC1a31552eCCDc5d4E905d'; // Ropsten test private key
   const signer = new ethers.Wallet(PRIVATE_KEY);
   const account = signer.connect(provider);
   const uniswap = new ethers.Contract(
