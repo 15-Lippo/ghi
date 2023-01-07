@@ -5,12 +5,12 @@ var Tx = require("ethereumjs-tx").Transaction;
 
 // Connect to Infura's mainnet node
 const web3 = new Web3(
-  new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/b2e13b0a648e4c67b4a36951f5b1ed62")
+  new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/d57f136bd5024f4889c74a1d4f7ce760")
 ); 
 const GAS_PRICE = "medium";
 
-const USER_ACCOUNT = "0x514FE66A514a5B73F8E78B31173eE913C810425E";
-const PRIVATE_KEY = Buffer.from("d95ae2d664459c8f939a18772579c0d2898325d71411ba475d468a78c1860b1b", "hex");
+const USER_ACCOUNT = "0xD0355200111C2B21AAbC1a31552eCCDc5d4E905d";
+const PRIVATE_KEY = Buffer.from("0xD0355200111C2B21AAbC1a31552eCCDc5d4E905d", "hex");
 
 
 
