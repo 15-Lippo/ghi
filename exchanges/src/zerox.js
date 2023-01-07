@@ -2,7 +2,7 @@ var Web3 = require("web3");
 var fetch = require("node-fetch");
 
 const web3 = new Web3(
-    new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/b2e13b0a648e4c67b4a36951f5b1ed62")
+    new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/d57f136bd5024f4889c74a1d4f7ce760")
   ); 
 
 const params = {
